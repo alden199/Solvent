@@ -1,0 +1,18 @@
+training:
+  rollout_batch_size: 64
+  num_steps_per_rollout: 1
+  rollout_temperature: 1.0
+  rollout_top_p: 1.0
+  use_kl_loss: true
+  kl_loss_type: low_var_kl
+  kl_loss_coef: 0.01
+  dynamic_sampling_filter_path: solvent.rl.generate_with_emol.dynamic_filter_drop_all_zero_or_all_full_stock_chem
+reward:
+  retro_emol_reward_mode: gated_success_format
+  retro_emol_gated_success_reward_weight: 0.8
+  retro_emol_gated_final_route_stock_checked_reward_weight: 0.1
+  retro_emol_gated_tool_trace_valid_reward_weight: 0.1
+  retro_emol_overlong_penalty_enable: true
+  retro_emol_overlong_start_len: 16000
+  retro_emol_overlong_max_response_len: 24000
+  retro_emol_overlong_penalty_factor: 0.5

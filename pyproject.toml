@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solvent-retrosynthesis"
+version = "0.1.0"
+description = "Long-horizon reasoning for multi-step retrosynthesis"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = ["rdkit", "PyYAML", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["solvent*"]
+
+[tool.setuptools.package-data]
+solvent = ["prompts/*.json", "prompts/*.txt"]

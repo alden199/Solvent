@@ -1,0 +1,14 @@
+training:
+  rollout_batch_size: 128
+  num_steps_per_rollout: 2
+  rollout_temperature: 0.9
+  rollout_top_p: 0.9
+  use_kl_loss: false
+  kl_loss_coef: 0.0
+  dynamic_sampling_filter_path: solvent.rl.generate_with_emol.dynamic_filter_drop_all_success_or_all_parse_fail
+reward:
+  retro_emol_reward_mode: default
+  retro_emol_overlong_penalty_enable: true
+  retro_emol_overlong_start_len: 20000
+  retro_emol_overlong_max_response_len: 30000
+  retro_emol_overlong_penalty_factor: 1.0

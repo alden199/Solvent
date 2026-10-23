@@ -1,0 +1,18 @@
+[
+  {
+    "name": "check_emolecules_stock",
+    "description": "Check whether the leaf starting materials of a proposed retrosynthetic route are present in the eMolecules stock database. The input should be the complete proposed route, not a single molecule. The result stock_ok=true means every predicted leaf material is available, but it does not prove chemical correctness.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "answer_route": {
+          "type": "string",
+          "description": "The complete proposed retrosynthetic route as a JSON list of PRODUCT>>PRECURSORS strings."
+        }
+      },
+      "required": [
+        "answer_route"
+      ]
+    }
+  }
+]

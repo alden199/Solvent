@@ -1,0 +1,36 @@
+--extra-index-url https://download.pytorch.org/whl/cu129
+torch==2.9.1+cu129
+torchvision==0.24.1+cu129
+torchaudio==2.9.1+cu129
+numpy==1.26.4
+transformers==4.57.1
+ray[default]==2.53.0
+sglang @ git+https://github.com/sgl-project/sglang.git@24c91001cf99ba642be791e099d358f4dfe955f5#subdirectory=python
+sglang-router==0.3.2
+sgl-kernel==0.3.20
+flashinfer-python==0.5.3
+flashinfer-cubin==0.5.3
+megatron-core @ git+https://github.com/NVIDIA/Megatron-LM.git@3714d81d418c9f1bca4594fc35f9e8289f652862
+mbridge @ git+https://github.com/ISEEKYAN/mbridge.git@89eb10887887bc74853f89a4de258c0702932a1c
+torch-memory-saver @ git+https://github.com/fzyzcjy/torch_memory_saver.git@dc6876905830430b5054325fa4211ff302169c6b
+transformer-engine[pytorch]==2.10.0
+flash-attn==2.7.4.post1
+ring-flash-attn==0.1.8
+accelerate==1.12.0
+blobfile==3.0.0
+datasets==4.5.0
+httpx[http2]==0.28.1
+mcp[cli]==1.26.0
+memray==1.19.1
+numba==0.61.2
+omegaconf==2.3.0
+pillow==12.0.0
+pylatexenc==2.10
+pyyaml==6.0.3
+qwen-vl-utils==0.0.14
+tensorboard==2.20.0
+wandb==0.24.1
+packaging==25.0
+safetensors==0.7.0
+einops==0.8.2
+tqdm==4.67.1
